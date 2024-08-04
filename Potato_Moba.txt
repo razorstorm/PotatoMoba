@@ -1,0 +1,128 @@
+Imagine if Potato was a moba hero.
+
+Potato is a melee hero with High attack speed, high move speed, high damage, high evasion, medium armor, medium mana, medium-low hp, and a weak early game compared to other heroes. 
+
+
+Innate Attribute:
+
+Immortality: Potato and his summonable friends are immortal and cannot be slain. Upon reaching 1 hp, Potato simply teleports back to his base and goes into a stasis for the same duration as it would take for a hero of his level to respawn. This is known as an instance of "recovery" rather than of "respawn". Potato may break out of the stasis early at any time, but all his attributes and stats will be prorated to the percentage of the stasis duration that was actually completed. Potato needs to resume stasis to recover the missing stats. Resuming stasis is slower than entering upon reaching 1 hp, and will recover potato's stats at 1/2 the normal rate. Potato may only break out of stasis early once for each recovery, when he resumes stasis, he is no longer able to break out early a second time. If potato reaches 1 hp after having broken out early and not having fully recovered his stats yet, he will go into recovery without the ability to break out early, but still recovering at full speed. 
+
+
+Abilities:
+
+----
+
+Stretching!!!: Potato stretches to warm himself up for a big battle, granting himself 50% boost to attackspeed and movespeed.
+
+----
+
+Drape: channeling, drapes on opponent's lap making them unable to move for the duration of the channel. Can chennel infinitely. Potato also cannot move while channeling this ability, but has a +10 to accuracy and +20% to damage when attacking the target of this ability
+
+----
+
+Belly Rub Stance: Potato flips over and reveals belly, opponent has a 60% chance of succumbing to the temptation and gets stunned for 5 seconds while giving potato a belly rub. 20% chance that opponent is unaffected by the move. 1% chance opponent can make an attack with critical on the exposed belly
+
+----
+
+Fake Belly Rub Stance: Potato flips over seemingly to initiate the belly rub stance. 50% chance opponent is tricked into believing the bluff and moves in to make an attack with free crit, but instead this attack deals 0 damage as potato quickly parries and counter attacks. 50% chance this move does nothing
+
+----
+
+Shaking!!!: 5 second channeling time, as potato aggressively shakes the target back and forth 5 times. 
+
+After the channeling is complete: If opponent has either less than 400 hp or less than 40% of their max hp, they instantly die. 
+Otherwise, opponent takes 100 + 30% of their max hp points of direct damage. Direct damage is guaranteed to hit and bypasses all resistances, armor, evasion, shielding, and any other forms of damage resistance or avoidance. 
+
+If potato is interrupted before completion of the entire channel, the opponent takes 100 + 30% of their max hp points of damage prorated by the percent of the channeling time that was completed.
+
+----
+
+Fetch: passive reaction. Whenever an opponent projectile attack or ability misses, potato can choose to automatically fetch the projectile and launch it back at the opponent for 2x the original damage of the projectile.
+
+Potato runs at the missed projectile at 5x his normal movespeed, and immediately launches the projectile once he has reached it, then he runs back to his original location at 5x his normal movespeed. This can be animation canceled at any time, but if canceled before he reaches the projectile in the first place, no damage is done and the spell still goes on cooldown, but this can be used as a way to traverse the map quickly
+
+Fetch may be set to autocast, but if autocast is disabled the ability needs to be manually activated within 3 seconds of a missed projectile.
+
+----
+
+Mouthing - Weak: 5 second channeling ability. Potato softly mouths on either an opponent or an ally. 
+
+If opponent: Opponent has movespeed slowed by 50% and may not make any attacks while this ability is active on them. Opponent may break out of the attack by either becoming immune to status effects or by distancing themselves more than 500 units away from potato (Either via forcibly moving potato or by teleporting themselves away)
+
+If ally: Ally gets 50 hp / second heal + 30 mp / second recovery throughout the duration of this ability but has their movespeed reduced by 20%
+
+----
+
+Mouthing - Strong: 5 second channeling ability. Potato bites down hard on either an opponent or an ally. 
+
+If opponent: Opponent has movespeed slowed by 30% and takes 120 damage per second. Opponent may break out of the attack by either becoming immune to status effects or by distancing themselves more than 500 units away from potato (Either via forcibly moving potato or by teleporting themselves away). If opponent falls under the "direct kill" threshold of "Shaking!!!" while this attack is active, potato may cast a "Shaking!!!" attack for 0 cost and with only a 3 second channeling necessary. This does not put the Shaking!!! ability on cooldown. 
+
+If ally: Ally gets a +10% boost to damage and a +10% boost to attack speed that goes up by 10% for every second that this ability is channeled on the ally. If a full 5 seconds is channeled the ally would end up with a +50% boost to damage and a +50% boost to attack speed. This boost lasts 20 seconds regardless of how long the ability was channeled. The boost starts counting down from the moment this ability finishes channeling. The ally's movespeed is reduced by 30% while this ability is active.
+
+----
+
+Yelling!!!: Potato barks loudly at the opponent, lowering their concentration. The opponent loses 20% attack speed 15% damage and 30% accuracy for 20 seconds.
+
+----
+
+Pounce: Potato leaps at an opponent up to 500 units of distance away. If the opponent manages to move more than 300 units in the time potato takes to leap onto them, they can successfully dodge the attack. Potato lands at the point closes to the opponent within a 300 unit radius of the original target location. 
+
+The leap deals 300 damage to all units in a 300 unit radius of the location he lands in, and stuns all enemies within 100 units for 2 seconds and slows all units by 40% within the 300 unit radius for 5 seconds.
+
+If the leap connects, potato deals an additional 300 single target damage to the target. This damage is considered physical and can crit
+
+----
+
+Licking!!!: 3 second channel. Potato licks either an ally or an opponent.
+
+If opponent: Each second of the channel reduces the opponent's armor by 5. This effect lasts for 15 seconds after the end of the channeling.
+
+If ally: Each second of the channel boosts the ally's armor by 3. This effect lasts for 25 seconds after the end of the channeling.
+
+----
+
+Grunting!!!: Toggleable passive. When active, costs 3 mana per second. With this ability active, potato grunts while he attacks his enemies, significantly boosting his attack speed. Grunting increases potato's attack speed by 150%. 
+
+When set to autocast: Potato will automatically enable the ability any time he attacks an opponent (if it is not already enabled). If potato has not attacked anyone for 1 second, the ability will toggle itself off automatically.
+
+----
+
+Sharp teeth: Passive. Grants potato a 30% chance to deal a critical attack for 300% damage on every attack
+
+----
+
+Shake and throw: Toggleable Passive. Can only learn this ability if Shaking!!! is already learned. When this ability is enabled, Potato will end every Shaking!!! ability by tossing the enemy (or their corpse if Shaking!!! killed them) at a location of his choice. The thrown oponent deals damage / status effects equivalent to that of a Pounce landing. 
+
+If the opponent is still alive, then they will take an additional 150 physical damage from being tossed
+
+----
+
+Tini / Massive: Potato is now in control of his tininess. Learning this ability grants 3 abilities: Tini, Massive, and Normalize
+
+Tini: Potato becomes even more smoller and becomes nearly impossible to see with the naked eye. He gains: 95% evasion for all attacks and targetted abilities (does not impact aoe abilities) and no longer shows up on minimap nor hero highlighting at the cost of 50% damage and 50% movespeed. The presence of such intense tininess also severely boosts ally's morale, granting all allies within 1000 distance a 20% boost to accuracy and 30% boost to movespeed.
+
+Massive: Potato becomes a towering giant the size of Clifford. Potato gains 1.5x damage, 5x attack reach (his attack range would be almost comparable to a ranged hero during this), 2x movespeed, and 2x hp at the cost of completely losing all evasion
+
+Normalize: Potato goes back to normal size
+
+
+----
+
+Call Friend Abilities: These abilities allow Potato to call up one of his friends to help fight along his side. These abilities are not mutually exclusive and more than one friend may be called at any given time. There is no limit to how many friends may be called, but they each have their own separate cooldowns. A summoned friend fights with Potato for up to 120 seconds. Friends may be manually desummoned ahead of time if so desired. 
+
+If brought down to 1hp or lower, the player may choose to either send Potato's friend back to base for a standard Recovery or simply desummon them and let them recover on their own. Either way, when resummoned they will come back with full stats and health.
+
+Call Friend - Milu
+
+Potato calls upon Milu and summons her to help fight along his side. This ability spawns Milu, who has nearly identical stats and abilities to Potato.
+
+Call Friend - Chaima
+
+Potato calls upon the big Chaima and summons him to help fight along his side. Chaima is a large strength hero with high attack damage, high durability, high armor, high movespeed, medium-low attack speed, and low mana. Chaima typically excels as either a Tank or a melee DPS. Although he has lower DPS output than most carry heroes, Chaima's high durability allows him to easily outlast his opponents, racking up an impressive amount of total damage dealt by staying in the fight for longer than most carries are capable of.
+
+Call Friend - Dusty
+
+Potato calls upon the dusty and summons him to help fight along his side. Dusty is a medium sized dex hero with high attack damage, high movespeed, high attackspeed, low armor, low mana, and low hp. He fulfills a glass cannon bruiser (barbarian like) role that excels at making high risk-high reward and highly aggressive plays. He really shines in the offensive dealing massive DPS but can be quite easily taken down when forced into the defensive. 
+
+
+
