@@ -44,6 +44,12 @@
         h3 {
             font-size: 1.2em; /* Increased font size */
         }
+        #top-grid {
+            display: grid;
+            grid-template-columns: 2fr 3fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
         .attribute-box h2 {
             margin-top: 10px;
         }
@@ -63,8 +69,7 @@
             height: auto;
         }
         .attribute-table {
-            margin-top: 20px;
-            max-width; 600px;
+            max-width: 600px;
             min-width: 300px;
             border-collapse: collapse;
         }
@@ -125,11 +130,6 @@
             background-position: center;
             background-size: cover;
         }
-        #top-grid {
-            display: grid;
-            grid-template-columns: 2fr 3fr 1fr;
-            gap: 20px;
-        }
         .grid-section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -175,9 +175,11 @@
 
             <div id="intro">
                 <!-- <h2>Intro</h2> -->
-                <p>Meet Potato, the adorable yet formidable melee hero! With a playful demeanor and a fierce spirit, Potato brings a unique blend of high attack speed, move speed, and damage to the battlefield. Despite his small size, Potato's agility and evasion make him a difficult target to hit, allowing him to dart around opponents with ease.</p>
-                <p>Potato's abilities are a delightful mix of crowd control, support, and devastating attacks. From stunning enemies with his irresistible Belly Rub Stance to shaking foes into submission, Potato is a versatile hero who can adapt to various combat scenarios. His innate immortality ensures that he always returns to the fight, ready to take on any challenge.</p>
-                <p>With his loyal friends Milu, Chaima, and Dusty at his side, Potato is never alone in battle. Together, they form an unstoppable team, capable of overwhelming the opposition with their combined strengths. Whether you're looking for a carry, initiator, or support, Potato is the hero who can do it all with a wag of his tail!</p>
+                <p>Meet Potato, the heartmeltingly adorable fun sized melee hero! With his tiny size, affectionate personality, and insatiably playful demeanor he's sure to be the cutest creature on any battlefield! But don't let his lovable exterior fool you! Under that endearing teddybear-look lives an indominable and fierce spirit!</p>
+                <p>Those poor saps unfortunate enough to face off against Potato will quickly find out that he brings a unique blend of high agility and ruinously powerful attacks to subdue and demolish all his foes with ease. With his small size and his extreme dexterity, Potato makes for an almost impossible target to hit, allowing him near free reign to wreak havoc with impunity.</p>
+                <p>Potato's abilities are a delightful mix of crowd control take-downs, mobility enhancing maneuvers, and cataclysmic onslaughts. From incapacitating enemies with his irresistible Belly Rub Stance to violently death-shaking foes into an early grave, Potato is a versatile and dangerous hero who can adapt to various combat scenarios. Even on the off chance that a lucky enemy hero manages to subdue Potato, our hero's divine immortality ensures that he always returns to the fight, ready to enact his righteous revenge upon all who dared cross him.</p>
+                <p>If all that wasn't devastating enough, Potato's sheer lovability ensures he is never truly alone. Potato's loving and loyal companions Milu, Chaima, and Dusty are always by his side, ready to jump into the battle at Potato's every beck and call. Together, these 4 mighty champions form an unstoppable team, capable of overwhelming any opposition with their combined power. 
+                <p>Whether you're in need of a carry, initiator, or support, Potato is the hero who can do it all with a wag of his tail!</p>
             </div>
             <table class="attribute-table">
                 <tr>
@@ -185,8 +187,12 @@
                     <th>Value</th>
                 </tr>
                 <tr>
-                    <td>Role</td>
+                    <td>Category</td>
                     <td>Melee Hero</td>
+                </tr>
+                <tr>
+                    <td>Reach / Range</td>
+                    <td>Melee - Low</td>
                 </tr>
                 <tr>
                     <td>Attack Speed</td>
@@ -198,11 +204,11 @@
                 </tr>
                 <tr>
                     <td>Damage</td>
-                    <td class="green">High</td>
+                    <td class="green">Extremely High</td>
                 </tr>
                 <tr>
                     <td>Evasion</td>
-                    <td class="green">High</td>
+                    <td class="green">Very High</td>
                 </tr>
                 <tr>
                     <td>Armor</td>
@@ -210,11 +216,11 @@
                 </tr>
                 <tr>
                     <td>Mana</td>
-                    <td class="yellow">Medium</td>
+                    <td class="yellow">High</td>
                 </tr>
                 <tr>
                     <td>HP</td>
-                    <td class="red">Medium-Low</td>
+                    <td class="red">Low</td>
                 </tr>
                 <tr>
                     <td>Early Game</td>
@@ -225,8 +231,20 @@
                     <td class="yellow">Average-Strong</td>
                 </tr>
                 <tr>
-                    <td>Early Game</td>
+                    <td>Late Game</td>
                     <td class="green">Very Strong</td>
+                </tr>
+                <tr>
+                    <td>Ganking Ability</td>
+                    <td class="green">High</td>
+                </tr>
+                <tr>
+                    <td>Reliance on Items</td>
+                    <td class="green">Above Average</td>
+                </tr>
+                <tr>
+                    <td>Reliance on Farming</td>
+                    <td class="green">Below Average</td>
                 </tr>
             </table>
         </div>
@@ -343,24 +361,24 @@
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Tini / Massive</h3>
-                    <p>Potato controls his size with three abilities: Tini, Massive, and Normalize.</p>
-                    <p><strong>Tini</strong>: Potato becomes tiny, gaining <span class="green">95%</span> evasion for targeted attacks, disappearing from the minimap, and granting allies within <span class="green">1000</span> distance a <span class="green">20%</span> accuracy and <span class="green">30%</span> move speed boost. Damage and move speed are halved.</p>
-                    <p><strong>Massive</strong>: Potato becomes a giant, gaining <span class="green">1.5x</span> damage, <span class="green">5x</span> attack reach, <span class="green">2x</span> move speed, and <span class="green">2x</span> HP, but loses all evasion.</p>
+                    <p>Potato's innate powers allow him to manipulate his size at a quantum level. Potato possesses 3 abilities for alter his size: Tini!!!, Massive!!!, and Normalize.</p>
+                    <p><strong>Tini!!!</strong>: Potato becomes tiny, gaining <span class="green">95%</span> evasion for targeted attacks, disappearing from the minimap, and granting allies within <span class="green">1000</span> distance a <span class="green">20%</span> accuracy and <span class="green">30%</span> move speed boost. Damage and move speed are halved.</p>
+                    <p><strong>Massive!!!</strong>: Potato becomes a giant, gaining <span class="green">1.5x</span> damage, <span class="green">5x</span> attack reach, <span class="green">2x</span> move speed, and <span class="green">2x</span> HP, but loses all evasion.</p>
                     <p><strong>Normalize</strong>: Potato returns to normal size.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Call Friend Abilities</h3>
                     <p>Potato can summon friends to help fight alongside him. Each friend has a separate cooldown and fights for up to 120 seconds. Friends can be desummoned early or sent back to base for recovery if brought to 1 HP or lower.</p>
-                    <p><strong>Call Friend - Milu</strong>: Milu has stats and abilities similar to Potato.</p>
-                    <p><strong>Call Friend - Chaima</strong>: Chaima is a large strength hero with high damage, durability, armor, move speed, and low mana, excelling as a Tank or melee DPS.</p>
-                    <p><strong>Call Friend - Dusty</strong>: Dusty is a medium-sized dex hero with high damage, move speed, attack speed, low armor, mana, and HP, fulfilling a glass cannon bruiser role.</p>
+                    <p><strong>Call Friend - Milu</strong>: Milu has stats and abilities identical to Potato. Milu also looks near identical to Potato except for being slightly smaller in size and with a slightly lighter colored coat. Milu also shows up identically on the minimap as Potato. This similar appearance cause a lot of chaos on the battlefield and confuse opponents.</p>
+                    <p><strong>Call Friend - Chaima</strong>: Chaima is a massive-sized strength hero with very high damage, below average attack speed, very high durability, high armor, above average move speed, and low mana. Chaima excels at initiating fights and tanking large amounts of damage for the team. He has above average damage, and while he doesn't have the highest DPS, his ability to stay alive in long fights allow him to rack up vast amounts of accumulated damage on the enemy team.</p>
+                    <p><strong>Call Friend - Dusty</strong>: Dusty is a medium-sized dex hero with high damage, very high move speed, above average attack speed, low armor, very high mana, and low HP, fulfilling a glass cannon bruiser role. Dusty loves picking fights with larger dogs and then running away. This tendency is represented with a bonus damage when attacking and bonus move speed when running away from enemy heroes with higher HP or level than Dusty.</p>
                 </div>
             </div>
         </div>
         
         <div id="roles" class="full-section">
-            <h2>Roles for Potato in a MOBA Game</h2>
+            <h2>Suggested Roles for Potato</h2>
             <div class="role">
                 <h3>Carry</h3>
                 <p>With high damage, attack speed, and mobility, Potato excels as a carry, dealing massive damage in the late game. His abilities like "Stretching!!!" and "Sharp Teeth" enhance his DPS potential.</p>
@@ -375,7 +393,7 @@
             </div>
             <div class="role">
                 <h3>Support</h3>
-                <p>Potato's "Mouthing - Weak" and "Mouthing - Strong" abilities can heal and buff allies, offering support roles in various situations. "Licking!!!" can also bolster allies' defenses.</p>
+                <p>Potato's "Mouthing - Weak" and "Mouthing - Strong" abilities can heal and buff allies, offering support roles in various situations. "Licking!!!" can also bolster allies' defenses. Although Potato has numerous abilities that offer support or utility to his team, his toolkit is far more suited for killing enemies. Potato should avoid transitioning into a support role unless he was unable to farm up in early game.</p>
             </div>
             <div class="role">
                 <h3>Scout/Utility</h3>
