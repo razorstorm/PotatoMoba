@@ -5,319 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Corinthia:wght@400;700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Great+Vibes&family=Grey+Qo&family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Parisienne&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwitcher+Grypen:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Corinthia:wght@400;700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Great+Vibes&family=Grey+Qo&family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Parisienne&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwitcher+Grypen:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
 
     <title>Potato: The Unstoppable Pup</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-            min-width: 1080px !important;
-        }
-
-        .container::before {
-            content: "";
-            display: block;
-            background: rgba(255, 255, 255, 0.9);
-            background-image: url('imgs/bg_pattern.jpg');
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            z-index: -1;
-            margin: 0;
-            margin: -20px;
-            /* filter: contrast(1) brightness(0.95); */
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-
-            position: relative;
-            background: none;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            color: #12181C;
-            background-repeat: repeat;
-            font-family: Roboto, sans-serif;
-            font-family: "Raleway", sans-serif;
-            
-            font-optical-sizing: auto;
-            font-weight: 400;
-        }
-
-        .signature-box {
-            padding: 0;
-            width: 100%;
-            display: inline-block;
-            height: 80px;
-            vertical-align: bottom;
-            margin-top: 10px;
-            margin-bottom: 0px;
-            padding-left: 35px;
-            padding-right: 35px;
-            box-sizing: border-box;
-        }
-
-        .signature {
-            font-family: "Qwitcher Grypen", cursive;
-            font-optical-sizing: auto;
-            text-align: center;
-            width: 100%;
-            display: inline-block;
-            font-size: 70pt;
-            line-height: 55px;
-            margin: 0;
-            padding: 0;
-            border-bottom: solid 1px #a0a0a0c6;
-            box-sizing: border-box;
-        }
-        .signature::before {
-            content: "x";
-            font-size: 18pt;
-            font-family: "Anek Devanagari", sans-serif;
-            margin-bottom: 0;
-            line-height: 0;
-            left: -44px;
-            bottom: -1px;
-            font-weight: 200;
-            /* bottom: -0px; */
-            color: #a0a0a0c6;
-            text-shadow: none;
-            position: relative;
-        }
-
-        .pencil {
-            color: #0000006d;
-            text-shadow: 0.5px 0.5px 5px #75757544, 
-                        -0.5px -0.5px 5px #75757544, 
-                        0.5px -0.5px 5px #75757544, 
-                        -0.5px 0.5px 5px #75757544;
-        }
-
-        .title {
-            margin: 0;
-            font-family: "Edu VIC WA NT Beginner", cursive;
-            /* font-family: "Bodoni Moda SC", serif; */
-            font-family: "Cormorant Infant", serif;
-            font-style: italic;
-            /* color: #f8f8f8;
-            text-shadow: -1px -1.5px 1px #969696b6,
-            1px 1px 5px #29292961; */
-
-            color: #000000;
-            text-shadow: 1px 1px 2px #757575;
-            font-weight: 400;
-            font-size: 14pt;
-        }
-
-        .title:first-letter {
-            /* text-shadow: -1.5px -2px 1px #aeaeae85,
-            1px 1px 7.5px #29292964; */
-            font-family: "Cormorant Infant", serif;
-            font-family: "UnifrakturMaguntia", cursive;
-            font-style: italic;
-            color: #000000;
-            text-shadow: 1.5px 1.5px 5px #757575;
-            font-size: 260%;
-            /* line-height: pt; */
-            float: left;
-            padding-top: 2px;
-            padding-right: 7px;
-            /* padding-bottom: 2px; */
-        }
-
-        h1#title {
-            margin-top: 0;
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-            color: #333;
-            font-weight: 500;
-            font-family: "Rock Salt", cursive;
-            font-optical-sizing: auto;
-        }
-
-        h1 {
-            font-size: 40pt;
-            margin-bottom: 40px;
-            text-shadow: 3px 3px 3px #929292d6;
-        }
-
-        h2 {
-            margin-top: 0px;
-            margin-bottom: 20px;
-            font-size: 2.0em;
-            text-shadow: 2.5px 2.5px 3px #929292d6;
-        }
-
-        h3 {
-            font-size: 1.2em;
-        }
-
-        #top-grid {
-            display: grid;
-            grid-template-columns: 2fr 3fr 1fr;
-            gap: 20px;
-            align-items: start;
-        }
-
-        .attribute-box h2 {
-            margin-top: 10px;
-        }
-
-        .clearfix {
-            width: 100%;
-            position: relative;
-            clear: both;
-        }
-
-        .clearleft {
-            width: 40%;
-            position: relative;
-            clear: left;
-        }
-
-        .large-image {
-            border-radius: 10px;
-            width: 100%;
-            height: auto;
-        }
-
-        .attribute-table {
-            max-width: 600px;
-            min-width: 300px;
-            border-collapse: collapse;
-        }
-
-        .attribute-table th,
-        .attribute-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        .attribute-table th {
-            background-color: #f2f2f2;
-        }
-
-        .attribute-box {
-            background: url('attribute-box-background-placeholder.jpg');
-            /* Placeholder for the attribute box background */
-            background-size: cover;
-            padding: 15px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            position: relative;
-            margin-bottom: 20px;
-            width: 45%;
-            float: left;
-        }
-
-        #intro p:first-child {
-            margin-top: 0;
-        }
-
-        .attribute,
-        .ability,
-        .role {
-            margin-bottom: 20px;
-        }
-
-        .attribute h3,
-        .ability h3,
-        .role h3 {
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        .attribute p,
-        .ability p,
-        .role p {
-            margin: 5px 0;
-            line-height: 1.6;
-        }
-
-        #abilities {}
-
-        .ability-image {
-            border: 1.5px solid #ddd;
-            float: left;
-            width: 100px;
-            height: 100px;
-            border-radius: 7.5px;
-            /* margin-right: -50px;*/
-            margin-right: 20px;
-            margin-bottom: 5px;
-        }
-
-        .ability-bg-image {
-            border: 1.5px solid #ddd;
-            float: left;
-            width: 100px;
-            height: 100px;
-            border-radius: 7.5px;
-            margin-right: 20px;
-            margin-bottom: 5px;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .grid-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .full-section {
-            margin-top: 60px;
-        }
-
-        .ability-box {
-            background: url('imgs/scroll.jpg');
-            /* Placeholder for the ability box background */
-            background-size: cover;
-            padding: 15px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            position: relative;
-            text-shadow: 0.5px 0.5px 0 #ffffffb3;
-            font-weight: 500;
-            font-size: 11pt;
-        }
-
-        .ability-box h3 {
-            text-shadow: 1px 1px 0 #ffffffb5;
-        }
-
-        .ability-box h3 {
-            margin-top: 0;
-        }
-
-        .green {
-            color: green;
-        }
-
-        .yellow {
-            color: #FFD700;
-        }
-
-        .red {
-            color: red;
-        }
-
-        #roles {}
-
-        #roles .role h3 {
-            text-align: left;
-            /* Left aligned subheadings */
-        }
-    </style>
 </head>
 
 <body>
@@ -327,7 +21,8 @@
             <div>
                 <img src="imgs/105.jpg" alt="Potato" class="large-image">
                 <p class="signature-box"><span class="signature pencil">Potato</span></p>
-                <p class="title">Potato Khan, Emperor of Emperors, King of Kings, Khan of Khans, First Amongst Champions, Destroyer of Empires, Conqueror of Worlds, and Stealer of Hearts</p>
+                <p class="title">Potato Khan, Emperor of Emperors, King of Kings, Khan of Khans, First Amongst
+                    Champions, Destroyer of Empires, Conqueror of Worlds, and Stealer of Hearts</p>
             </div>
 
             <div id="intro">
@@ -446,7 +141,9 @@
                     <h3>Stretching!!!</h3>
                     <p>Potato stretches to warm up for a big battle, granting himself a <span class="green">50%</span>
                         boost to attack speed and move speed.</p>
-                    <p>This move is also incredibly cute and most who witness it feel compelled to give potato some pets while exclaiming "stretching!!!". Each opponent within 400 units of distance has a 30% chance of being enthralled by the move and must spend 3 seconds stunned as they rub potato's curls.</p>
+                    <p>This move is also incredibly cute and most who witness it feel compelled to give potato some pets
+                        while exclaiming "stretching!!!". Each opponent within 400 units of distance has a 30% chance of
+                        being enthralled by the move and must spend 3 seconds stunned as they rub potato's curls.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/draped.jpg);" class="ability-bg-image"></div>
@@ -482,7 +179,8 @@
                         times.</p>
                     <p><strong>Completion</strong>: If the opponent has less than <span class="red">400</span> HP or
                         less than <span class="red">40%</span> of their max HP, they instantly die. Otherwise, they take
-                        <span class="green">100 + 30%</span> of their max HP in direct damage.</p>
+                        <span class="green">100 + 30%</span> of their max HP in direct damage.
+                    </p>
                     <p><strong>Interruption</strong>: If interrupted, the opponent takes prorated damage based on the
                         completed channeling time.</p>
                 </div>
