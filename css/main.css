@@ -10,7 +10,7 @@ body {
   content: "";
   display: block;
   background: rgba(255, 255, 255, 0.9);
-  background-image: url('imgs/bg_pattern.jpg');
+  background-image: url('../imgs/bg_pattern.jpg');
   height: 100%;
   width: 100%;
   position: absolute;
@@ -265,7 +265,7 @@ h3 {
 }
 
 .ability-box {
-  background: url('imgs/scroll.jpg');
+  background: url('../imgs/scroll.jpg');
   /* Placeholder for the ability box background */
   background-size: cover;
   padding: 15px;
