@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Corinthia:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Great+Vibes&family=Grey+Qo&family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Parisienne&family=Pinyon+Script&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
     <title>Potato: The Unstoppable Pup</title>
     <style>
         body {
@@ -14,6 +16,10 @@
             margin: 0;
             padding: 20px;
         }
+        .bg-container {
+            background-image: url('imgs/bg_pattern.jpg');
+        }
+
         .container {
             max-width: 1200px;
             margin: auto;
@@ -21,68 +27,166 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            background-image: url('imgs/bg_pattern.jpg'); /* Placeholder for the background image */
+            /* background-image: url('imgs/bg_pattern.jpg'); */
+            /* filter: contrast(1) brightness(0.8); */
+            /* Placeholder for the background image */
             color: #12181C;
             background-repeat: repeat;
             font-family: Roboto, sans-serif;
+            font-optical-sizing: auto;
             font-weight: 400;
         }
-        h1, h2, h3 {
+
+        .signature-box {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: inline-block;
+            height: 80px;
+            vertical-align: bottom;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            box-sizing: border-box;
+        }
+
+        .signature {
+            font-family: "Qwitcher Grypen", cursive;
+            font-optical-sizing: auto;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            font-size: 90pt;
+            line-height: 67px;
+            margin: 0;
+            padding: 0;
+            border-bottom: solid 1.5px #AAA;
+            box-sizing: border-box;
+        }
+        .signature::before {
+            content: "x";
+            font-size: 20pt;
+            font-family: "Anek Devanagari", sans-serif;
+            margin-bottom: 0;
+            line-height: 0;
+            left: -20px;
+            bottom: -1px;
+            font-weight: 300;
+            /* bottom: -0px; */
+            color: #BBB;
+            text-shadow: none;
+            position: relative;
+        }
+
+        .pencil {
+            color: #2424246d;
+            text-shadow: 0.5px 0.5px 5px #75757544, 
+                        -0.5px -0.5px 5px #75757544, 
+                        0.5px -0.5px 5px #75757544, 
+                        -0.5px 0.5px 5px #75757544;
+            /* text-shadow: 0.5px 0.5px 5px #7575753f, 
+                        -0.5px -0.5px 5px #7575753f, 
+                        0.5px -0.5px 5px #7575753f, 
+                        -0.5px 0.5px 5px #7575753f,
+
+                        0.5px 0.5px 2px #7575750f, 
+                        -0.5px -0.5px 2px #7575750f, 
+                        0.5px -0.5px 2px #7575750f, 
+                        -0.5px 0.5px 2px #7575750f; */
+        }
+
+        .title {
+            margin: 0;
+            font-family: "Edu VIC WA NT Beginner", cursive;
+            /* font-family: "UnifrakturMaguntia", cursive; */
+            color: #efefef;
+            text-shadow: -0.5px -0.5px 0px #999;
+            font-size: 13pt;
+        }
+
+        h1, h2 {
+            font-family: "Rock Salt", cursive;
+            font-optical-sizing: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
             text-align: center;
             color: #333;
             font-weight: 500;
+            font-family: "Rock Salt", cursive;
+
         }
+
         h1 {
             font-size: 2.6em;
             margin-bottom: 40px;
         }
+
         h2 {
             margin-top: 0px;
-            margin-bottom: 20px; /* Small margin below */
-            font-size: 2.0em; /* Increased font size */
+            margin-bottom: 20px;
+            /* Small margin below */
+            font-size: 2.0em;
+            /* Increased font size */
         }
+
         h3 {
-            font-size: 1.2em; /* Increased font size */
+            font-size: 1.2em;
+            /* Increased font size */
         }
+
         #top-grid {
             display: grid;
             grid-template-columns: 2fr 3fr 1fr;
             gap: 20px;
             align-items: start;
         }
+
         .attribute-box h2 {
             margin-top: 10px;
         }
+
         .clearfix {
             width: 100%;
             position: relative;
             clear: both;
         }
+
         .clearleft {
             width: 40%;
             position: relative;
             clear: left;
         }
+
         .large-image {
             border-radius: 10px;
             width: 100%;
             height: auto;
         }
+
         .attribute-table {
             max-width: 600px;
             min-width: 300px;
             border-collapse: collapse;
         }
-        .attribute-table th, .attribute-table td {
+
+        .attribute-table th,
+        .attribute-table td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
+
         .attribute-table th {
             background-color: #f2f2f2;
         }
+
         .attribute-box {
-            background: url('attribute-box-background-placeholder.jpg'); /* Placeholder for the attribute box background */
+            background: url('attribute-box-background-placeholder.jpg');
+            /* Placeholder for the attribute box background */
             background-size: cover;
             padding: 15px;
             border: 2px solid #ddd;
@@ -92,23 +196,33 @@
             width: 45%;
             float: left;
         }
+
         #intro p:first-child {
             margin-top: 0;
         }
-        .attribute, .ability, .role {
+
+        .attribute,
+        .ability,
+        .role {
             margin-bottom: 20px;
         }
-        .attribute h3, .ability h3, .role h3 {
+
+        .attribute h3,
+        .ability h3,
+        .role h3 {
             margin-bottom: 10px;
             color: #444;
         }
-        .attribute p, .ability p, .role p {
+
+        .attribute p,
+        .ability p,
+        .role p {
             margin: 5px 0;
             line-height: 1.6;
         }
-        #abilities {
 
-        }
+        #abilities {}
+
         .ability-image {
             border: 1.5px solid #ddd;
             float: left;
@@ -119,6 +233,7 @@
             margin-right: 20px;
             margin-bottom: 5px;
         }
+
         .ability-bg-image {
             border: 1.5px solid #ddd;
             float: left;
@@ -130,16 +245,20 @@
             background-position: center;
             background-size: cover;
         }
+
         .grid-section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
+
         .full-section {
             margin-top: 60px;
         }
+
         .ability-box {
-            background: url('imgs/scroll.jpg'); /* Placeholder for the ability box background */
+            background: url('imgs/scroll.jpg');
+            /* Placeholder for the ability box background */
             background-size: cover;
             padding: 15px;
             border: 2px solid #ddd;
@@ -147,6 +266,7 @@
             position: relative;
             text-shadow: 0.5px 0.5px 0 #ffffff88;
         }
+
         .ability-box h3 {
             margin-top: 0;
         }
@@ -154,32 +274,56 @@
         .green {
             color: green;
         }
+
         .yellow {
             color: #FFD700;
         }
+
         .red {
             color: red;
         }
-        #roles {
-        }
+
+        #roles {}
+
         #roles .role h3 {
-            text-align: left; /* Left aligned subheadings */
+            text-align: left;
+            /* Left aligned subheadings */
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Potato: The Unstoppable Pup</h1>
         <div id="top-grid">
-            <img src="imgs/105.jpg" alt="Potato" class="large-image"> <!-- Placeholder for the large image -->
+            <div>
+                <img src="imgs/105.jpg" alt="Potato" class="large-image">
+                <p class="signature-box"><span class="signature pencil">Potato</span></p>
+                <p class="title">— Potato Khan, Emperor of Emperors, King of Kings, Khan of Khans, Destroyer of Empires, Conqueror of Worlds, and Stealer of Hearts</p>
+            </div>
 
             <div id="intro">
                 <!-- <h2>Intro</h2> -->
-                <p>Meet Potato, the heartmeltingly adorable fun sized melee hero! With his tiny size, affectionate personality, and insatiably playful demeanor he's sure to be the cutest creature on any battlefield! But don't let his lovable exterior fool you! Under that endearing teddybear-look lives an indominable and fierce spirit!</p>
-                <p>Those poor saps unfortunate enough to face off against Potato will quickly find out that he brings a unique blend of high agility and ruinously powerful attacks to subdue and demolish all his foes with ease. With his small size and his extreme dexterity, Potato makes for an almost impossible target to hit, allowing him near free reign to wreak havoc with impunity.</p>
-                <p>Potato's abilities are a delightful mix of crowd control take-downs, mobility enhancing maneuvers, and cataclysmic onslaughts. From incapacitating enemies with his irresistible Belly Rub Stance to violently death-shaking foes into an early grave, Potato is a versatile and dangerous hero who can adapt to various combat scenarios. Even on the off chance that a lucky enemy hero manages to subdue Potato, our hero's divine immortality ensures that he always returns to the fight, ready to enact his righteous revenge upon all who dared cross him.</p>
-                <p>If all that wasn't devastating enough, Potato's sheer lovability ensures he is never truly alone. Potato's loving and loyal companions Milu, Chaima, and Dusty are always by his side, ready to jump into the battle at Potato's every beck and call. Together, these 4 mighty champions form an unstoppable team, capable of overwhelming any opposition with their combined power. 
-                <p>Whether you're in need of a carry, initiator, or support, Potato is the hero who can do it all with a wag of his tail!</p>
+                <p>Meet Potato, the heartmeltingly adorable fun sized melee hero! With his tiny size, affectionate
+                    personality, and insatiably playful demeanor he's sure to be the cutest creature on any battlefield!
+                    But don't let his lovable exterior fool you! Under that endearing teddybear-look lives an
+                    indominable and fierce spirit!</p>
+                <p>Those poor saps unfortunate enough to face off against Potato will quickly find out that he brings a
+                    unique blend of high agility and ruinously powerful attacks to subdue and demolish all his foes with
+                    ease. With his small size and his extreme dexterity, Potato makes for an almost impossible target to
+                    hit, allowing him near free reign to wreak havoc with impunity.</p>
+                <p>Potato's abilities are a delightful mix of crowd control take-downs, mobility enhancing maneuvers,
+                    and cataclysmic onslaughts. From incapacitating enemies with his irresistible Belly Rub Stance to
+                    violently death-shaking foes into an early grave, Potato is a versatile and dangerous hero who can
+                    adapt to various combat scenarios. Even on the off chance that a lucky enemy hero manages to subdue
+                    Potato, our hero's divine immortality ensures that he always returns to the fight, ready to enact
+                    his righteous revenge upon all who dared cross him.</p>
+                <p>If all that wasn't devastating enough, Potato's sheer lovability ensures he is never truly alone.
+                    Potato's loving and loyal companions Milu, Chaima, and Dusty are always by his side, ready to jump
+                    into the battle at Potato's every beck and call. Together, these 4 mighty champions form an
+                    unstoppable team, capable of overwhelming any opposition with their combined power.
+                <p>Whether you're in need of a carry, initiator, or support, Potato is the hero who can do it all with a
+                    wag of his tail!</p>
             </div>
             <table class="attribute-table">
                 <tr>
@@ -252,167 +396,268 @@
 
 
         <div class="clearfix"></div>
-        
+
         <div id="abilities" class="full-section">
             <h2>Abilities</h2>
             <div class="grid-section">
                 <div class="ability-box">
                     <div style="background-image: url(imgs/immortal.jpg);" class="ability-bg-image"></div>
                     <h3>Innate Attribute: Immortality</h3>
-                    <p>Potato and his summonable friends are immortal and cannot be slain. Upon reaching 1 HP, Potato teleports back to his base and enters a stasis for the same duration it would take for a hero of his level to respawn. This is known as "recovery" rather than "respawn."</p>
-                    <p>Potato may break out of stasis early, but his attributes and stats will be prorated to the percentage of the stasis duration completed. Resuming stasis is slower than entering upon reaching 1 HP, recovering Potato's stats at half the normal rate. Potato may only break out of stasis early once per recovery.</p>
-                    <p>If Potato reaches 1 HP after breaking out early and not fully recovering, he will enter recovery without the ability to break out early but will recover at full speed.</p>
+                    <p>Potato and his summonable friends are immortal and cannot be slain. Upon reaching 1 HP, Potato
+                        teleports back to his base and enters a stasis for the same duration it would take for a hero of
+                        his level to respawn. This is known as "recovery" rather than "respawn."</p>
+                    <p>Potato may break out of stasis early, but his attributes and stats will be prorated to the
+                        percentage of the stasis duration completed. Resuming stasis is slower than entering upon
+                        reaching 1 HP, recovering Potato's stats at half the normal rate. Potato may only break out of
+                        stasis early once per recovery.</p>
+                    <p>If Potato reaches 1 HP after breaking out early and not fully recovering, he will enter recovery
+                        without the ability to break out early but will recover at full speed.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/stretching.jpg);" class="ability-bg-image"></div>
                     <h3>Stretching!!!</h3>
-                    <p>Potato stretches to warm up for a big battle, granting himself a <span class="green">50%</span> boost to attack speed and move speed.</p>
+                    <p>Potato stretches to warm up for a big battle, granting himself a <span class="green">50%</span>
+                        boost to attack speed and move speed.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/draped.jpg);" class="ability-bg-image"></div>
                     <h3>Drape</h3>
-                    <p><strong>Channeling</strong>: Potato drapes on an either opponent's or an ally's lap. Neither Potato nor target can move during this ability.</p>
-                    <p><strong>Ally:</strong> 120 seconds channel. Both Potato and the ally gain <span class="green">+100</span> hp per second recovery <span class="green">+100</span> mp per second recovery. If the entirety of the 120 seconds has been successfully channeled, both Potato and the allied hero gain 1 level's worth of exp.</p>
-                    <p><strong>Opponent:</strong> 5 seconds channel. Potato gains <span class="green">+10</span> to accuracy and <span class="green">+30%</span> to damage when attacking the target.</p>
+                    <p><strong>Channeling</strong>: Potato drapes on an either opponent's or an ally's lap. Neither
+                        Potato nor target can move during this ability.</p>
+                    <p><strong>Ally:</strong> 120 seconds channel. Both Potato and the ally gain <span
+                            class="green">+100</span> hp per second recovery <span class="green">+100</span> mp per
+                        second recovery. If the entirety of the 120 seconds has been successfully channeled, both Potato
+                        and the allied hero gain 1 level's worth of exp.</p>
+                    <p><strong>Opponent:</strong> 5 seconds channel. Potato gains <span class="green">+10</span> to
+                        accuracy and <span class="green">+30%</span> to damage when attacking the target.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/bellyrub.jpg);" class="ability-bg-image"></div>
                     <h3>Belly Rub Stance</h3>
-                    <p>Potato flips over and reveals his belly. The opponent has a <span class="green">60%</span> chance of being stunned for 5 seconds while giving Potato a belly rub, a <span class="yellow">20%</span> chance of being unaffected, and a <span class="red">1%</span> chance of making a critical attack on Potato's exposed belly.</p>
+                    <p>Potato flips over and reveals his belly. The opponent has a <span class="green">60%</span> chance
+                        of being stunned for 5 seconds while giving Potato a belly rub, a <span
+                            class="yellow">20%</span> chance of being unaffected, and a <span class="red">1%</span>
+                        chance of making a critical attack on Potato's exposed belly.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/fakebellyrub.jpg);" class="ability-bg-image"></div>
                     <h3>Fake Belly Rub Stance</h3>
-                    <p>Potato fakes a belly rub stance. There is a <span class="yellow">50%</span> chance the opponent will be tricked into making an attack, which deals 0 damage as Potato quickly parries and counterattacks. There is a <span class="yellow">50%</span> chance this move does nothing.</p>
+                    <p>Potato fakes a belly rub stance. There is a <span class="yellow">50%</span> chance the opponent
+                        will be tricked into making an attack, which deals 0 damage as Potato quickly parries and
+                        counterattacks. There is a <span class="yellow">50%</span> chance this move does nothing.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/shaking.jpg);" class="ability-bg-image"></div>
                     <h3>Shaking!!!</h3>
-                    <p><strong>Channeling</strong>: 5 seconds. Potato aggressively shakes the target back and forth 5 times.</p>
-                    <p><strong>Completion</strong>: If the opponent has less than <span class="red">400</span> HP or less than <span class="red">40%</span> of their max HP, they instantly die. Otherwise, they take <span class="green">100 + 30%</span> of their max HP in direct damage.</p>
-                    <p><strong>Interruption</strong>: If interrupted, the opponent takes prorated damage based on the completed channeling time.</p>
+                    <p><strong>Channeling</strong>: 5 seconds. Potato aggressively shakes the target back and forth 5
+                        times.</p>
+                    <p><strong>Completion</strong>: If the opponent has less than <span class="red">400</span> HP or
+                        less than <span class="red">40%</span> of their max HP, they instantly die. Otherwise, they take
+                        <span class="green">100 + 30%</span> of their max HP in direct damage.</p>
+                    <p><strong>Interruption</strong>: If interrupted, the opponent takes prorated damage based on the
+                        completed channeling time.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Sleep - Sideways!!!</h3>
-                    <p><strong>Channeling</strong>: 60 seconds. Potato lies on his side and takes a very relaxing nap. During the nap, potato is completely stunned, but gains 50 hp per second and 50 mp per second recovery and +20 armor. Potato may end his nap at any moment.</p>
+                    <p><strong>Channeling</strong>: 60 seconds. Potato lies on his side and takes a very relaxing nap.
+                        During the nap, potato is completely stunned, but gains 50 hp per second and 50 mp per second
+                        recovery and +20 armor. Potato may end his nap at any moment.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Sleep - Circle!!!</h3>
-                    <p><strong>Channeling</strong>: 60 seconds. Potato goes into a circle and takes a very safe nap. During the nap, potato is completely stunned, but gains 50% evasion and 90% damage reduction from all sources. Potato may end his nap at any moment.</p>
+                    <p><strong>Channeling</strong>: 60 seconds. Potato goes into a circle and takes a very safe nap.
+                        During the nap, potato is completely stunned, but gains 50% evasion and 90% damage reduction
+                        from all sources. Potato may end his nap at any moment.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Sleep - Cuddle!!!</h3>
-                    <p><strong>Channeling</strong>: 60 seconds. Potato cuddles up to one ally hero and takes a very loving nap. During the nap, Potato and the allied hero are both completely stunned, but both Potato and the allied hero gain 100 hp per second and 50 mp per second recovery. Either Potato or the allied hero may end this nap at any moment, waking up both heroes.</p>
+                    <p><strong>Channeling</strong>: 60 seconds. Potato cuddles up to one ally hero and takes a very
+                        loving nap. During the nap, Potato and the allied hero are both completely stunned, but both
+                        Potato and the allied hero gain 100 hp per second and 50 mp per second recovery. Either Potato
+                        or the allied hero may end this nap at any moment, waking up both heroes.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Fetch</h3>
-                    <p><strong>Passive Reaction</strong>: When an opponent's projectile attack or ability misses, Potato can fetch and launch it back at the opponent for <span class="green">2x</span> the original damage. Potato runs at <span class="green">5x</span> his normal move speed to fetch the projectile and returns to his original location at the same speed. This can be animation-canceled for quick map traversal.</p>
+                    <p><strong>Passive Reaction</strong>: When an opponent's projectile attack or ability misses, Potato
+                        can fetch and launch it back at the opponent for <span class="green">2x</span> the original
+                        damage. Potato runs at <span class="green">5x</span> his normal move speed to fetch the
+                        projectile and returns to his original location at the same speed. This can be
+                        animation-canceled for quick map traversal.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Mouthing - Weak</h3>
                     <p><strong>Channeling</strong>: 5 seconds.</p>
-                    <p><strong>Opponent</strong>: Movespeed slowed by <span class="red">50%</span>, cannot attack. Can break out by becoming immune to status effects or moving <span class="red">500</span> units away from Potato.</p>
-                    <p><strong>Ally</strong>: Heals <span class="green">50</span> HP/second and recovers <span class="green">30</span> MP/second, but movespeed reduced by <span class="red">20%</span>.</p>
+                    <p><strong>Opponent</strong>: Movespeed slowed by <span class="red">50%</span>, cannot attack. Can
+                        break out by becoming immune to status effects or moving <span class="red">500</span> units away
+                        from Potato.</p>
+                    <p><strong>Ally</strong>: Heals <span class="green">50</span> HP/second and recovers <span
+                            class="green">30</span> MP/second, but movespeed reduced by <span class="red">20%</span>.
+                    </p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Mouthing - Strong</h3>
                     <p><strong>Channeling</strong>: 5 seconds.</p>
-                    <p><strong>Opponent</strong>: Movespeed slowed by <span class="red">30%</span>, takes <span class="red">120</span> damage/second. Can break out by becoming immune to status effects or moving <span class="red">500</span> units away. If the opponent falls under the "Shaking!!!" threshold, Potato can cast "Shaking!!!" for 0 cost with a 3-second channel.</p>
-                    <p><strong>Ally</strong>: Boosts damage and attack speed by <span class="green">10%</span> per second channeled, up to <span class="green">50%</span>. The boost lasts 20 seconds. Movespeed reduced by <span class="red">30%</span> during the channel.</p>
+                    <p><strong>Opponent</strong>: Movespeed slowed by <span class="red">30%</span>, takes <span
+                            class="red">120</span> damage/second. Can break out by becoming immune to status effects or
+                        moving <span class="red">500</span> units away. If the opponent falls under the "Shaking!!!"
+                        threshold, Potato can cast "Shaking!!!" for 0 cost with a 3-second channel.</p>
+                    <p><strong>Ally</strong>: Boosts damage and attack speed by <span class="green">10%</span> per
+                        second channeled, up to <span class="green">50%</span>. The boost lasts 20 seconds. Movespeed
+                        reduced by <span class="red">30%</span> during the channel.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Yelling!!!</h3>
-                    <p>Potato barks loudly at the opponent, reducing their attack speed by <span class="red">20%</span>, damage by <span class="red">15%</span>, and accuracy by <span class="red">30%</span> for 20 seconds.</p>
+                    <p>Potato barks loudly at the opponent, reducing their attack speed by <span class="red">20%</span>,
+                        damage by <span class="red">15%</span>, and accuracy by <span class="red">30%</span> for 20
+                        seconds.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Pounce</h3>
-                    <p>Potato leaps at an opponent up to <span class="green">500</span> units away. If the opponent moves more than <span class="red">300</span> units before Potato lands, they dodge the attack. Potato deals <span class="green">300</span> damage to units within <span class="green">300</span> units of the landing point, stuns enemies within <span class="green">100</span> units for 2 seconds, and slows all units by <span class="red">40%</span> for 5 seconds.</p>
+                    <p>Potato leaps at an opponent up to <span class="green">500</span> units away. If the opponent
+                        moves more than <span class="red">300</span> units before Potato lands, they dodge the attack.
+                        Potato deals <span class="green">300</span> damage to units within <span
+                            class="green">300</span> units of the landing point, stuns enemies within <span
+                            class="green">100</span> units for 2 seconds, and slows all units by <span
+                            class="red">40%</span> for 5 seconds.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Licking!!!</h3>
                     <p><strong>Channeling</strong>: 3 seconds.</p>
-                    <p><strong>Opponent</strong>: Reduces armor by <span class="red">5</span> per second, lasting 15 seconds after the channel.</p>
-                    <p><strong>Ally</strong>: Boosts armor by <span class="green">3</span> per second, lasting 25 seconds after the channel.</p>
+                    <p><strong>Opponent</strong>: Reduces armor by <span class="red">5</span> per second, lasting 15
+                        seconds after the channel.</p>
+                    <p><strong>Ally</strong>: Boosts armor by <span class="green">3</span> per second, lasting 25
+                        seconds after the channel.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Grunting!!!</h3>
-                    <p><strong>Toggleable Passive</strong>: Costs 3 mana/second. Increases attack speed by <span class="green">150%</span>. Automatically toggles on during attacks and off after 1 second of inactivity.</p>
+                    <p><strong>Toggleable Passive</strong>: Costs 3 mana/second. Increases attack speed by <span
+                            class="green">150%</span>. Automatically toggles on during attacks and off after 1 second of
+                        inactivity.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Sharp Teeth</h3>
-                    <p><strong>Passive</strong>: Grants a <span class="green">30%</span> chance to deal a critical attack for <span class="green">300%</span> damage on every attack.</p>
+                    <p><strong>Passive</strong>: Grants a <span class="green">30%</span> chance to deal a critical
+                        attack for <span class="green">300%</span> damage on every attack.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Shake and Throw</h3>
-                    <p><strong>Toggleable Passive</strong>: Ends "Shaking!!!" by tossing the enemy (or their corpse) at a location, dealing damage and status effects equivalent to "Pounce" landing. If the opponent is alive, they take an additional <span class="green">150</span> physical damage.</p>
+                    <p><strong>Toggleable Passive</strong>: Ends "Shaking!!!" by tossing the enemy (or their corpse) at
+                        a location, dealing damage and status effects equivalent to "Pounce" landing. If the opponent is
+                        alive, they take an additional <span class="green">150</span> physical damage.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Tini / Massive</h3>
-                    <p>Potato's innate powers allow him to manipulate his size at a quantum level. Potato possesses 3 abilities for alter his size: Tini!!!, Massive!!!, and Normalize.</p>
-                    <p><strong>Tini!!!</strong>: Potato becomes tiny, gaining <span class="green">95%</span> evasion for targeted attacks, disappearing from the minimap, and granting allies within <span class="green">1000</span> distance a <span class="green">20%</span> accuracy and <span class="green">30%</span> move speed boost. Damage and move speed are halved.</p>
-                    <p><strong>Massive!!!</strong>: Potato becomes a giant, gaining <span class="green">1.5x</span> damage, <span class="green">5x</span> attack reach, <span class="green">2x</span> move speed, and <span class="green">2x</span> HP, but loses all evasion.</p>
+                    <p>Potato's innate powers allow him to manipulate his size at a quantum level. Potato possesses 3
+                        abilities for alter his size: Tini!!!, Massive!!!, and Normalize.</p>
+                    <p><strong>Tini!!!</strong>: Potato becomes tiny, gaining <span class="green">95%</span> evasion for
+                        targeted attacks, disappearing from the minimap, and granting allies within <span
+                            class="green">1000</span> distance a <span class="green">20%</span> accuracy and <span
+                            class="green">30%</span> move speed boost. Damage and move speed are halved.</p>
+                    <p><strong>Massive!!!</strong>: Potato becomes a giant, gaining <span class="green">1.5x</span>
+                        damage, <span class="green">5x</span> attack reach, <span class="green">2x</span> move speed,
+                        and <span class="green">2x</span> HP, but loses all evasion.</p>
                     <p><strong>Normalize</strong>: Potato returns to normal size.</p>
                 </div>
                 <div class="ability-box">
                     <div style="background-image: url(imgs/placeholder.jpg);" class="ability-bg-image"></div>
                     <h3>Call Friend Abilities</h3>
-                    <p>Potato can summon friends to help fight alongside him. Each friend has a separate cooldown and fights for up to 120 seconds. Friends can be desummoned early or sent back to base for recovery if brought to 1 HP or lower.</p>
-                    <p><strong>Call Friend - Milu</strong>: Milu has stats and abilities identical to Potato. Milu also looks near identical to Potato except for being slightly smaller in size and with a slightly lighter colored coat. Milu also shows up identically on the minimap as Potato. This similar appearance cause a lot of chaos on the battlefield and confuse opponents.</p>
-                    <p><strong>Call Friend - Chaima</strong>: Chaima is a massive-sized strength hero with very high damage, below average attack speed, very high durability, high armor, above average move speed, and low mana. Chaima excels at initiating fights and tanking large amounts of damage for the team. He has above average damage, and while he doesn't have the highest DPS, his ability to stay alive in long fights allow him to rack up vast amounts of accumulated damage on the enemy team.</p>
-                    <p><strong>Call Friend - Dusty</strong>: Dusty is a medium-sized dex hero with high damage, very high move speed, above average attack speed, low armor, very high mana, and low HP, fulfilling a glass cannon bruiser role. Dusty loves picking fights with larger dogs and then running away. This tendency is represented with a bonus damage when attacking and bonus move speed when running away from enemy heroes with higher HP or level than Dusty.</p>
+                    <p>Potato can summon friends to help fight alongside him. Each friend has a separate cooldown and
+                        fights for up to 120 seconds. Friends can be desummoned early or sent back to base for recovery
+                        if brought to 1 HP or lower.</p>
+                    <p><strong>Call Friend - Milu</strong>: Milu has stats and abilities identical to Potato. Milu also
+                        looks near identical to Potato except for being slightly smaller in size and with a slightly
+                        lighter colored coat. Milu also shows up identically on the minimap as Potato. This similar
+                        appearance cause a lot of chaos on the battlefield and confuse opponents.</p>
+                    <p><strong>Call Friend - Chaima</strong>: Chaima is a massive-sized strength hero with very high
+                        damage, below average attack speed, very high durability, high armor, above average move speed,
+                        and low mana. Chaima excels at initiating fights and tanking large amounts of damage for the
+                        team. He has above average damage, and while he doesn't have the highest DPS, his ability to
+                        stay alive in long fights allow him to rack up vast amounts of accumulated damage on the enemy
+                        team.</p>
+                    <p><strong>Call Friend - Dusty</strong>: Dusty is a medium-sized dex hero with high damage, very
+                        high move speed, above average attack speed, low armor, very high mana, and low HP, fulfilling a
+                        glass cannon bruiser role. Dusty loves picking fights with larger dogs and then running away.
+                        This tendency is represented with a bonus damage when attacking and bonus move speed when
+                        running away from enemy heroes with higher HP or level than Dusty.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="roles" class="full-section">
             <h2>Suggested Roles for Potato</h2>
             <div class="role">
                 <h3>Carry</h3>
-                <p>With high damage, attack speed, and mobility, Potato excels as a carry, dealing massive damage in the late game. His abilities like "Stretching!!!" and "Sharp Teeth" enhance his DPS potential.</p>
+                <p>With high damage, attack speed, and mobility, Potato excels as a carry, dealing massive damage in the
+                    late game. His abilities like "Stretching!!!" and "Sharp Teeth" enhance his DPS potential.</p>
             </div>
             <div class="role">
                 <h3>Initiator</h3>
-                <p>Potato's "Pounce" and "Shaking!!!" abilities allow him to initiate fights effectively, disrupting enemy formations and setting up kills for his team.</p>
+                <p>Potato's "Pounce" and "Shaking!!!" abilities allow him to initiate fights effectively, disrupting
+                    enemy formations and setting up kills for his team.</p>
             </div>
             <div class="role">
                 <h3>Disabler</h3>
-                <p>Abilities like "Drape," "Belly Rub Stance," and "Yelling!!!" provide strong crowd control, making Potato an effective disabler in team fights.</p>
+                <p>Abilities like "Drape," "Belly Rub Stance," and "Yelling!!!" provide strong crowd control, making
+                    Potato an effective disabler in team fights.</p>
             </div>
             <div class="role">
                 <h3>Support</h3>
-                <p>Potato's "Mouthing - Weak" and "Mouthing - Strong" abilities can heal and buff allies, offering support roles in various situations. "Licking!!!" can also bolster allies' defenses. Although Potato has numerous abilities that offer support or utility to his team, his toolkit is far more suited for killing enemies. Potato should avoid transitioning into a support role unless he was unable to farm up in early game.</p>
+                <p>Potato's "Mouthing - Weak" and "Mouthing - Strong" abilities can heal and buff allies, offering
+                    support roles in various situations. "Licking!!!" can also bolster allies' defenses. Although Potato
+                    has numerous abilities that offer support or utility to his team, his toolkit is far more suited for
+                    killing enemies. Potato should avoid transitioning into a support role unless he was unable to farm
+                    up in early game.</p>
             </div>
             <div class="role">
                 <h3>Scout/Utility</h3>
-                <p>With "Fetch" and "Tini," Potato can traverse the map quickly and scout enemy positions. His ability to manipulate size and evade detection makes him valuable for gathering intelligence and making surprise attacks.</p>
+                <p>With "Fetch" and "Tini," Potato can traverse the map quickly and scout enemy positions. His ability
+                    to manipulate size and evade detection makes him valuable for gathering intelligence and making
+                    surprise attacks.</p>
             </div>
         </div>
         <div id="strategies" class="full-section">
             <h2>Strategic Play with Potato</h2>
-            <p>Potato's unique blend of immortality and versatile abilities makes him a formidable hero in any MOBA game. Here are a few strategies to maximize his potential on the battlefield:</p>
+            <p>Potato's unique blend of immortality and versatile abilities makes him a formidable hero in any MOBA
+                game. Here are a few strategies to maximize his potential on the battlefield:</p>
             <ul>
-                <li><strong>Early Game Caution:</strong> Despite his weaker early game, use Potato's evasion and mobility to harass enemies and avoid engagements. Focus on gathering resources and leveling up to unleash his full potential in mid to late game.</li>
-                <li><strong>Initiating Fights:</strong> Utilize Potato's "Pounce" to initiate fights. Its ability to stun enemies makes it an excellent opening move, followed by "Shaking!!!" to deal substantial damage to key targets.</li>
-                <li><strong>Team Support:</strong> Potato's abilities like "Mouthing - Weak" and "Mouthing - Strong" are crucial in team fights. Use these to heal and buff your allies or slow down and weaken opponents, shifting the tide of battle in your favor.</li>
-                <li><strong>Distraction and Disruption:</strong> Potato can excel at disrupting enemy strategies. Use his "Drape" ability on critical enemy heroes during team fights to immobilize them and reduce their effectiveness.</li>
-                <li><strong>Maximizing Immortality:</strong> Exploit Potato's immortality by taking calculated risks. Engage in battles where you can force the enemy to focus on you, allowing your team to capitalize on the chaos. Remember, Potato's recovery is a key strategic tool that can be used to make daring plays without the permanent consequences of death.</li>
-                <li><strong>End Game Strategies:</strong> In the late game, ensure Potato is at the center of team fights. His ability to absorb damage and disrupt enemy lines can secure crucial objectives and lead your team to victory.</li>
+                <li><strong>Early Game Caution:</strong> Despite his weaker early game, use Potato's evasion and
+                    mobility to harass enemies and avoid engagements. Focus on gathering resources and leveling up to
+                    unleash his full potential in mid to late game.</li>
+                <li><strong>Initiating Fights:</strong> Utilize Potato's "Pounce" to initiate fights. Its ability to
+                    stun enemies makes it an excellent opening move, followed by "Shaking!!!" to deal substantial damage
+                    to key targets.</li>
+                <li><strong>Team Support:</strong> Potato's abilities like "Mouthing - Weak" and "Mouthing - Strong" are
+                    crucial in team fights. Use these to heal and buff your allies or slow down and weaken opponents,
+                    shifting the tide of battle in your favor.</li>
+                <li><strong>Distraction and Disruption:</strong> Potato can excel at disrupting enemy strategies. Use
+                    his "Drape" ability on critical enemy heroes during team fights to immobilize them and reduce their
+                    effectiveness.</li>
+                <li><strong>Maximizing Immortality:</strong> Exploit Potato's immortality by taking calculated risks.
+                    Engage in battles where you can force the enemy to focus on you, allowing your team to capitalize on
+                    the chaos. Remember, Potato's recovery is a key strategic tool that can be used to make daring plays
+                    without the permanent consequences of death.</li>
+                <li><strong>End Game Strategies:</strong> In the late game, ensure Potato is at the center of team
+                    fights. His ability to absorb damage and disrupt enemy lines can secure crucial objectives and lead
+                    your team to victory.</li>
             </ul>
-            <p>By adapting these strategies, players can use Potato not just as a damage dealer but as a dynamic hero capable of swinging the momentum of the game. Remember, the key to mastering Potato is understanding the timing and combination of his abilities to maximize both his survival and impact.</p>
+            <p>By adapting these strategies, players can use Potato not just as a damage dealer but as a dynamic hero
+                capable of swinging the momentum of the game. Remember, the key to mastering Potato is understanding the
+                timing and combination of his abilities to maximize both his survival and impact.</p>
         </div>
     </div>
 </body>
+
 </html>
